@@ -5,6 +5,16 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { ChevronDown, Github, Linkedin, Mail, ExternalLink, Check, Smartphone, Monitor } from 'lucide-react';
 
+
+import mobileLogIn from "../assets/mobile-application/login-page.jpeg"; 
+import mobileDashboardOrders from "../assets/mobile-application/dashboard-orders.jpeg"; 
+import mobileDashbordTask from "../assets/mobile-application/dashbord-task.jpeg"; 
+import mobileWorkOrder from "../assets/mobile-application/work-order.jpeg"; 
+import mobileTaskVerification from "../assets/mobile-application/task-verification.jpeg"; 
+import mobileLocationVerified from "../assets/mobile-application/location-verified.jpeg"; 
+import mobileStartTask from "../assets/mobile-application/start-task.jpeg"; 
+import mobileCompeleteTask from "../assets/mobile-application/compelete-task.jpeg"; 
+
 export default function Portfolio() {
   const [activeTab, setActiveTab] = useState<'mobile' | 'web'>('web');
 
@@ -267,8 +277,13 @@ export default function Portfolio() {
                   <div className="bg-muted p-2 sm:p-3">
                     <p className="text-xs font-semibold truncate">Login Screen</p>
                   </div>
-                  <div className="aspect-square bg-gradient-to-br from-primary/5 to-accent/5 flex items-center justify-center p-3 sm:p-4">
-                    <Smartphone className="w-7 h-7 sm:w-10 sm:h-10 text-primary/30" />
+                  <div className="aspect-[3/5] bg-gray-100 flex items-center justify-center p-1 sm:p-2 relative">
+                    <Image 
+                      src={mobileLogIn} 
+                      alt="Login Screen" 
+                      fill
+                      className="object-cover"
+                    />
                   </div>
                 </div>
 
@@ -276,8 +291,13 @@ export default function Portfolio() {
                   <div className="bg-muted p-2 sm:p-3">
                     <p className="text-xs font-semibold truncate">Dashboard</p>
                   </div>
-                  <div className="aspect-square bg-gradient-to-br from-primary/5 to-accent/5 flex items-center justify-center p-3 sm:p-4">
-                    <Smartphone className="w-7 h-7 sm:w-10 sm:h-10 text-primary/30" />
+                  <div className="aspect-[3/5] bg-gray-100 flex items-center justify-center p-1 sm:p-2 relative">
+                    <Image 
+                      src={mobileDashboardOrders} 
+                      alt="Dashboard Orders" 
+                      fill
+                      className="object-cover"
+                    />
                   </div>
                 </div>
 
@@ -285,17 +305,27 @@ export default function Portfolio() {
                   <div className="bg-muted p-2 sm:p-3">
                     <p className="text-xs font-semibold truncate">Work Orders</p>
                   </div>
-                  <div className="aspect-square bg-gradient-to-br from-primary/5 to-accent/5 flex items-center justify-center p-3 sm:p-4">
-                    <Smartphone className="w-7 h-7 sm:w-10 sm:h-10 text-primary/30" />
+                  <div className="aspect-[3/5] bg-gray-100 flex items-center justify-center p-1 sm:p-2 relative">
+                    <Image 
+                      src={mobileWorkOrder} 
+                      alt="Work Order" 
+                      fill
+                      className="object-cover"
+                    />
                   </div>
                 </div>
 
                 <div className="rounded-lg border border-border overflow-hidden bg-card">
                   <div className="bg-muted p-2 sm:p-3">
-                    <p className="text-xs font-semibold truncate">Asset Details</p>
+                    <p className="text-xs font-semibold truncate">Task List</p>
                   </div>
-                  <div className="aspect-square bg-gradient-to-br from-primary/5 to-accent/5 flex items-center justify-center p-3 sm:p-4">
-                    <Smartphone className="w-7 h-7 sm:w-10 sm:h-10 text-primary/30" />
+                  <div className="aspect-[3/5] bg-gray-100 flex items-center justify-center p-1 sm:p-2 relative">
+                    <Image 
+                      src={mobileDashbordTask} 
+                      alt="Dashboard Task" 
+                      fill
+                      className="object-cover"
+                    />
                   </div>
                 </div>
 
@@ -303,17 +333,27 @@ export default function Portfolio() {
                   <div className="bg-muted p-2 sm:p-3">
                     <p className="text-xs font-semibold truncate">Task Details</p>
                   </div>
-                  <div className="aspect-square bg-gradient-to-br from-primary/5 to-accent/5 flex items-center justify-center p-3 sm:p-4">
-                    <Smartphone className="w-7 h-7 sm:w-10 sm:h-10 text-primary/30" />
+                  <div className="aspect-[3/5] bg-gray-100 flex items-center justify-center p-1 sm:p-2 relative">
+                    <Image 
+                      src={mobileTaskVerification} 
+                      alt="Task Verification" 
+                      fill
+                      className="object-cover"
+                    />
                   </div>
                 </div>
 
                 <div className="rounded-lg border border-border overflow-hidden bg-card">
                   <div className="bg-muted p-2 sm:p-3">
-                    <p className="text-xs font-semibold truncate">Verification</p>
+                    <p className="text-xs font-semibold truncate">Location Verified</p>
                   </div>
-                  <div className="aspect-square bg-gradient-to-br from-primary/5 to-accent/5 flex items-center justify-center p-3 sm:p-4">
-                    <Smartphone className="w-7 h-7 sm:w-10 sm:h-10 text-primary/30" />
+                  <div className="aspect-[3/5] bg-gray-100 flex items-center justify-center p-1 sm:p-2 relative">
+                    <Image 
+                      src={mobileLocationVerified} 
+                      alt="Location Verified" 
+                      fill
+                      className="object-cover"
+                    />
                   </div>
                 </div>
 
@@ -321,8 +361,13 @@ export default function Portfolio() {
                   <div className="bg-muted p-2 sm:p-3">
                     <p className="text-xs font-semibold truncate">Start Task</p>
                   </div>
-                  <div className="aspect-square bg-gradient-to-br from-primary/5 to-accent/5 flex items-center justify-center p-3 sm:p-4">
-                    <Smartphone className="w-7 h-7 sm:w-10 sm:h-10 text-primary/30" />
+                  <div className="aspect-[3/5] bg-gray-100 flex items-center justify-center p-1 sm:p-2 relative">
+                    <Image 
+                      src={mobileStartTask} 
+                      alt="Start Task" 
+                      fill
+                      className="object-cover"
+                    />
                   </div>
                 </div>
 
@@ -330,8 +375,13 @@ export default function Portfolio() {
                   <div className="bg-muted p-2 sm:p-3">
                     <p className="text-xs font-semibold truncate">Complete</p>
                   </div>
-                  <div className="aspect-square bg-gradient-to-br from-primary/5 to-accent/5 flex items-center justify-center p-3 sm:p-4">
-                    <Smartphone className="w-7 h-7 sm:w-10 sm:h-10 text-primary/30" />
+                  <div className="aspect-[3/5] bg-gray-100 flex items-center justify-center p-1 sm:p-2 relative">
+                    <Image 
+                      src={mobileCompeleteTask} 
+                      alt="Complete Task" 
+                      fill
+                      className="object-cover"
+                    />
                   </div>
                 </div>
               </div>
