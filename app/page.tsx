@@ -13,7 +13,16 @@ import mobileWorkOrder from "../assets/mobile-application/work-order.jpeg";
 import mobileTaskVerification from "../assets/mobile-application/task-verification.jpeg"; 
 import mobileLocationVerified from "../assets/mobile-application/location-verified.jpeg"; 
 import mobileStartTask from "../assets/mobile-application/start-task.jpeg"; 
-import mobileCompeleteTask from "../assets/mobile-application/compelete-task.jpeg"; 
+import mobileCompeleteTask from "../assets/mobile-application/compelete-task.jpeg";
+
+import webDashboard from "../assets/admin-panel-web/dashbord.png";
+import webCustomer from "../assets/admin-panel-web/customer-page.png";
+import webAsset from "../assets/admin-panel-web/asset-page.png";
+import webAddOrder from "../assets/admin-panel-web/add-order-page.png";
+import webUser from "../assets/admin-panel-web/user-page.png";
+import webSchedule from "../assets/admin-panel-web/schedule-page.png";
+import webTimeline from "../assets/admin-panel-web/timeline-page.png";
+import webAddProject from "../assets/admin-panel-web/add-project-page.png"; 
 
 export default function Portfolio() {
   const [activeTab, setActiveTab] = useState<'mobile' | 'web'>('web');
@@ -72,8 +81,13 @@ export default function Portfolio() {
               </div>
             </div>
             <div className="flex justify-center mt-8 md:mt-0">
-              <div className="relative w-48 h-64 sm:w-64 sm:h-80 md:w-72 md:h-96 bg-gradient-to-br from-primary/10 to-accent/10 rounded-2xl flex items-center justify-center">
-                <Smartphone className="w-20 h-20 sm:w-28 sm:h-28 md:w-32 md:h-32 text-primary/30" />
+              <div className="relative w-48 h-64 sm:w-64 sm:h-80 md:w-72 md:h-96 bg-gray-200 rounded-2xl overflow-hidden shadow-lg">
+                <Image 
+                  src={mobileDashboardOrders}
+                  alt="Mobile Dashboard" 
+                  fill
+                  className="object-contain"
+                />
               </div>
             </div>
           </div>
@@ -206,12 +220,14 @@ export default function Portfolio() {
                 <div className="bg-muted p-3 sm:p-4">
                   <p className="text-xs sm:text-sm font-semibold">Dashboard - Overview</p>
                 </div>
-                <div className="aspect-video bg-gradient-to-br from-primary/5 to-accent/5 flex items-center justify-center p-4 sm:p-8">
-                  <div className="text-center">
-                    <Monitor className="w-12 h-12 sm:w-16 sm:h-16 text-primary/30 mx-auto mb-3 sm:mb-4" />
-                    <p className="text-xs sm:text-sm text-muted-foreground">Summary Dashboard with Customer, Project, Order, Asset, and Task counts</p>
-                    <p className="text-xs text-muted-foreground mt-2">Recent task activity table with employee performance tracking</p>
-                  </div>
+                <div className="bg-gray-100 relative w-full">
+                  <Image 
+                    src={webDashboard} 
+                    alt="Dashboard Overview" 
+                    width={1920}
+                    height={1080}
+                    className="w-full h-auto"
+                  />
                 </div>
               </div>
 
@@ -220,11 +236,14 @@ export default function Portfolio() {
                   <div className="bg-muted p-3 sm:p-4">
                     <p className="text-xs sm:text-sm font-semibold">Customer Management</p>
                   </div>
-                  <div className="aspect-video bg-gradient-to-br from-primary/5 to-accent/5 flex items-center justify-center p-4 sm:p-6">
-                    <div className="text-center">
-                      <Monitor className="w-10 h-10 sm:w-12 sm:h-12 text-primary/30 mx-auto mb-2" />
-                      <p className="text-xs sm:text-sm text-muted-foreground">Edit customer details with map integration</p>
-                    </div>
+                  <div className="bg-gray-100 relative w-full">
+                    <Image 
+                      src={webCustomer} 
+                      alt="Customer Management" 
+                      width={1920}
+                      height={1080}
+                      className="w-full h-auto"
+                    />
                   </div>
                 </div>
 
@@ -232,11 +251,14 @@ export default function Portfolio() {
                   <div className="bg-muted p-3 sm:p-4">
                     <p className="text-xs sm:text-sm font-semibold">Asset Management</p>
                   </div>
-                  <div className="aspect-video bg-gradient-to-br from-primary/5 to-accent/5 flex items-center justify-center p-4 sm:p-6">
-                    <div className="text-center">
-                      <Monitor className="w-10 h-10 sm:w-12 sm:h-12 text-primary/30 mx-auto mb-2" />
-                      <p className="text-xs sm:text-sm text-muted-foreground">Track equipment and assets across projects</p>
-                    </div>
+                  <div className="bg-gray-100 relative w-full">
+                    <Image 
+                      src={webAsset} 
+                      alt="Asset Management" 
+                      width={1920}
+                      height={1080}
+                      className="w-full h-auto"
+                    />
                   </div>
                 </div>
               </div>
@@ -244,13 +266,48 @@ export default function Portfolio() {
               <div className="grid gap-4 sm:gap-8 md:grid-cols-2">
                 <div className="rounded-lg border border-border overflow-hidden bg-card">
                   <div className="bg-muted p-3 sm:p-4">
-                    <p className="text-xs sm:text-sm font-semibold">Task Management</p>
+                    <p className="text-xs sm:text-sm font-semibold">Add Order</p>
                   </div>
-                  <div className="aspect-video bg-gradient-to-br from-primary/5 to-accent/5 flex items-center justify-center p-4 sm:p-6">
-                    <div className="text-center">
-                      <Monitor className="w-10 h-10 sm:w-12 sm:h-12 text-primary/30 mx-auto mb-2" />
-                      <p className="text-xs sm:text-sm text-muted-foreground">Create and assign tasks to employees with full details</p>
-                    </div>
+                  <div className="bg-gray-100 relative w-full">
+                    <Image 
+                      src={webAddOrder} 
+                      alt="Add Order Page" 
+                      width={1920}
+                      height={1080}
+                      className="w-full h-auto"
+                    />
+                  </div>
+                </div>
+
+                <div className="rounded-lg border border-border overflow-hidden bg-card">
+                  <div className="bg-muted p-3 sm:p-4">
+                    <p className="text-xs sm:text-sm font-semibold">User Management</p>
+                  </div>
+                  <div className="bg-gray-100 relative w-full">
+                    <Image 
+                      src={webUser} 
+                      alt="User Management" 
+                      width={1920}
+                      height={1080}
+                      className="w-full h-auto"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div className="grid gap-4 sm:gap-8 md:grid-cols-2">
+                <div className="rounded-lg border border-border overflow-hidden bg-card">
+                  <div className="bg-muted p-3 sm:p-4">
+                    <p className="text-xs sm:text-sm font-semibold">Schedule Management</p>
+                  </div>
+                  <div className="bg-gray-100 relative w-full">
+                    <Image 
+                      src={webSchedule} 
+                      alt="Schedule Management" 
+                      width={1920}
+                      height={1080}
+                      className="w-full h-auto"
+                    />
                   </div>
                 </div>
 
@@ -258,12 +315,30 @@ export default function Portfolio() {
                   <div className="bg-muted p-3 sm:p-4">
                     <p className="text-xs sm:text-sm font-semibold">Employee Timeline</p>
                   </div>
-                  <div className="aspect-video bg-gradient-to-br from-primary/5 to-accent/5 flex items-center justify-center p-4 sm:p-6">
-                    <div className="text-center">
-                      <Monitor className="w-10 h-10 sm:w-12 sm:h-12 text-primary/30 mx-auto mb-2" />
-                      <p className="text-xs sm:text-sm text-muted-foreground">GPS tracking with interactive map and route visualization</p>
-                    </div>
+                  <div className="bg-gray-100 relative w-full">
+                    <Image 
+                      src={webTimeline} 
+                      alt="Employee Timeline" 
+                      width={1920}
+                      height={1080}
+                      className="w-full h-auto"
+                    />
                   </div>
+                </div>
+              </div>
+
+              <div className="rounded-lg border border-border overflow-hidden bg-card">
+                <div className="bg-muted p-3 sm:p-4">
+                  <p className="text-xs sm:text-sm font-semibold">Add Project</p>
+                </div>
+                <div className="bg-gray-100 relative w-full">
+                  <Image 
+                    src={webAddProject} 
+                    alt="Add Project Page" 
+                    width={1920}
+                    height={1080}
+                    className="w-full h-auto"
+                  />
                 </div>
               </div>
             </div>
