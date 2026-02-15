@@ -12,20 +12,7 @@ export const metadata: Metadata = {
   description: 'TaskTrack: A comprehensive task tracking application for field operations with real-time updates, team collaboration, and timeline visualization.',
   generator: 'v0.app',
   icons: {
-    icon: [
-      {
-        url: '/icon-light-32x32.png',
-        media: '(prefers-color-scheme: light)',
-      },
-      {
-        url: '/icon-dark-32x32.png',
-        media: '(prefers-color-scheme: dark)',
-      },
-      {
-        url: '/icon.svg',
-        type: 'image/svg+xml',
-      },
-    ],
+    icon: '/codeverse-icon.jpg',
     apple: '/apple-icon.png',
   },
 }
